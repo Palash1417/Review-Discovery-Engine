@@ -1,0 +1,8 @@
+# Spotify Music Discovery — review analysis pipeline
+pandas>=2.0
+requests>=2.32
+google-play-scraper>=1.2
+groq>=1.2
+matplotlib>=3.8
+python-dotenv>=1.0
+praw>=7.7          # only needed for the Reddit-capable collector

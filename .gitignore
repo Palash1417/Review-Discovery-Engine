@@ -1,0 +1,19 @@
+# SECURITY: never commit API keys
+.env
+*.key
+
+# Local tooling / editor settings
+.claude/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs / temp
+*.log
+_inspect*.py
+collect_run.log
+tagging_run.log
