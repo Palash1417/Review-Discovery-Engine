@@ -56,15 +56,59 @@ Discovery sub-themes:           Sentiment:
 
 ➡️ Full report: [`discovery_insights_report.md`](discovery_insights_report.md)
 
-## Research questions this answers
-1. Why do users struggle to discover new music?
-2. What are the most common frustrations with recommendations?
-3. What listening behaviors are users trying to achieve?
-4. What causes users to repeatedly listen to the same content?
-5. Which user segments experience different discovery challenges?
-6. What unmet needs emerge consistently across reviews?
+## 🧭 How to read this analysis (methodology & guidelines)
 
-➡️ See **[`discovery_insights_report.md`](discovery_insights_report.md)** for the findings.
+- **Data:** 161 reviews that passed a music-discovery keyword filter, drawn from
+  Google Play (primary) and the Apple App Store RSS feed, within the last 12 months.
+- **Tagging:** each review was labeled by an LLM (Llama 3.3 70B via Groq) with a
+  `discovery_subtheme`, `sentiment`, and an extracted `pain_point`.
+- **Synthesis:** a map-reduce pass summarized each sub-theme cluster, then
+  combined those with exact Python-computed statistics into the findings below.
+- **Read with these caveats:** the dataset is **single-source-dominant** (Google
+  Play), **recent** (high review volume compresses the date range), and
+  **English-language**. The `other` cluster (~30%) is an off-theme residual —
+  treat it as "general app friction," not a discovery finding.
+
+## 📌 Key findings — answers to the research questions
+
+*Grounded in the tagged dataset and the full [`discovery_insights_report.md`](discovery_insights_report.md). Sentiment is 59% negative overall.*
+
+**1. Why do users struggle to discover new music?**
+Discovery is blocked less by a weak algorithm than by **friction and loss of
+control**. Free-tier constraints — forced "smart" shuffle, unskippable ads, and
+song-selection locked behind Premium — crowd out exploration, and a shuffle that
+replays the same tracks kills variety. The `repetition_filter_bubble` theme is
+**100% negative**, and **35%** of reviews mention free/ads/premium.
+
+**2. What are the most common frustrations with recommendations?**
+**Unwanted, over-eager suggestions** and weak personalization. Users feel pushed
+content they didn't ask for (*"I DO NOT WANT WHAT IS RECOMMENDED TO ME"*) and that
+the system over-generalizes from minimal signal (*"the Blend algorithm seems to
+think that if I listen to a song one time, I automatically love it"*).
+`algorithm_personalization` is 62% negative.
+
+**3. What listening behaviors are users trying to achieve?**
+**Uninterrupted, controllable listening** — play a chosen song in a chosen order,
+reorder Liked Songs, play playlists in sequence, and curate personal collections.
+"Seamless control" recurs across every cluster. Satisfied users *do* want
+discovery (Discover Weekly is praised), but the baseline goal is control.
+
+**4. What causes users to repeatedly listen to the same content?**
+A **product mechanic, not user preference**: a shuffle that isn't truly random
+(*"the shuffle literally only plays the same 20 songs on repeat in the same
+order"*), and "smart shuffle" doesn't fix it. This theme is **100% negative**.
+
+**5. Which user segments experience different discovery challenges?**
+A clear split by **rating and tier**. Low-raters (1–2★, n=75) cluster on
+search/navigation and repetition friction; high-raters (4–5★, n=61) praise
+discovery features (*"Discover Weekly reads my mind"*). The **free-tier segment**
+(35% of reviews mention ads/free/premium) is the most frustrated, because key
+playback controls are paywalled.
+
+**6. What unmet needs emerge consistently across reviews?**
+Three recur everywhere: **(a)** an ad-free / minimal-ad experience, **(b)** real
+playback control (true shuffle, reorder Liked Songs, play-in-order, repeat), and
+**(c)** an **opt-out** from algorithmic feeds and unwanted recommendations.
 
 ## Pipeline
 
