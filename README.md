@@ -13,6 +13,49 @@ charts run live; the AI tagging + findings are shown from results committed in
 this repo, so testers need **no API key**. (An optional cell lets anyone re-run
 the AI live with their own free [Groq key](https://console.groq.com/keys).)
 
+## 🖼️ Expected output
+
+After **Runtime → Run all**, you should see roughly the following. (Live
+collection counts vary per run; the AI tagging, charts, and report below come
+from the committed results, so they're identical every time.)
+
+**Collection & filtering (live):**
+
+```text
+Play Store: 250 reviews
+App Store: 0 reviews          # 0 is normal from Colab's shared IP (Apple throttling)
+Total raw reviews collected live: 250
+... discovery-relevant reviews kept
+```
+
+**AI tagging (committed results — 161 reviews):**
+
+```text
+Discovery sub-themes:           Sentiment:
+  other                     48    negative    95
+  search_and_navigation     30    positive    54
+  catalog_availability      20    mixed       12
+  discovery_features        17
+  playlist_curation         15
+  recommendation_quality    12
+  repetition_filter_bubble  11
+  algorithm_personalization  8
+```
+
+**Charts (rendered live from the tagged data):**
+
+![Discovery reviews by sub-theme](chart_subtheme_frequency.png)
+![% negative sentiment by sub-theme](chart_pct_negative.png)
+
+**Findings report (excerpt):**
+
+> The most significant frustrations stem from the **repetition filter bubble**
+> (100% negative) and **search and navigation** issues (77% negative). Discovery
+> is blocked less by a weak algorithm than by friction and loss of control —
+> forced shuffle, ads, and song-selection locked behind Premium.
+
+➡️ Full report: [`discovery_insights_report.md`](discovery_insights_report.md)
+
 ## Research questions this answers
 1. Why do users struggle to discover new music?
 2. What are the most common frustrations with recommendations?
