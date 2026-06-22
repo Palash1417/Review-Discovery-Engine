@@ -139,6 +139,7 @@ python chart_discovery_reviews.py        # charts
 - `spotify_discovery_reviews_tagged.csv` — + AI tags
 - `discovery_insights_report.md` — findings report
 - `chart_*.png` — charts
+- [`Spotify_Reviews.xlsx`](Spotify_Reviews.xlsx) — all reviews in one Excel workbook (all / discovery / tagged sheets + summary)
 
 ## Security
 API keys live in `.env`, which is **gitignored** — never commit keys. The
