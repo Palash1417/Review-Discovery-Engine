@@ -131,14 +131,17 @@ print(f"{len(disc)} of {len(raw)} live-collected reviews are discovery-relevant"
 disc.head()'''))
 
 cells.append(md("## 4 · Phase 2 — AI tagging (results)\n"
-                "Each discovery review was tagged with a **discovery sub-theme**, **sentiment**, "
+                "Each discovery review is tagged with a **discovery sub-theme**, **sentiment**, "
                 "and an extracted **pain point** using a free Groq model (Llama 3.3 70B). "
-                "Because AI tagging needs an API key/quota, the committed results are shown here. "
+                "The full dataset has 2,033 reviews; AI tagging runs ~150/day on the free tier, "
+                "so the committed results below reflect the subset tagged so far. "
                 "*(Re-run it live yourself in the optional section at the end.)*"))
 cells.append(code(
 '''import pandas as pd
-tagged = pd.read_csv("spotify_discovery_reviews_tagged.csv")
-print("Pre-computed tagged reviews:", tagged.shape[0])
+full = pd.read_csv("spotify_discovery_reviews_2000_tagged.csv")
+tagged = full[full["discovery_subtheme"].notna()]
+print(f"Dataset: {len(full)} discovery reviews | tagged so far: {len(tagged)} "
+      f"(AI tagging runs ~150/day on the free tier)")
 print("\\nDiscovery sub-themes:\\n", tagged["discovery_subtheme"].value_counts().to_string())
 print("\\nSentiment:\\n", tagged["sentiment"].value_counts().to_string())
 tagged[["source","rating","discovery_subtheme","sentiment","pain_point","text"]].head(10)'''))
@@ -164,7 +167,7 @@ plt.title("Overall sentiment"); plt.ylabel("reviews"); plt.tight_layout(); plt.s
 cells.append(md("## 6 · Phase 3 — Findings report (answers the research questions)"))
 cells.append(code(
 '''from IPython.display import Markdown, display
-display(Markdown(open("discovery_insights_report.md", encoding="utf-8").read()))'''))
+display(Markdown(open("discovery_insights_report_2000.md", encoding="utf-8").read()))'''))
 
 cells.append(md("## (Optional) Re-run the AI live with your own free Groq key\n"
                 "Skip this unless you have a key from https://console.groq.com/keys — the "

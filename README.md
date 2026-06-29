@@ -31,40 +31,43 @@ Total raw reviews collected live: 250
 ... discovery-relevant reviews kept
 ```
 
-**AI tagging (committed results — 161 reviews):**
+**AI tagging (committed results — 453 of 2,033 tagged so far):**
 
 ```text
-Discovery sub-themes:           Sentiment:
-  other                     48    negative    95
-  search_and_navigation     30    positive    54
-  catalog_availability      20    mixed       12
-  discovery_features        17
-  playlist_curation         15
-  recommendation_quality    12
-  repetition_filter_bubble  11
-  algorithm_personalization  8
+Discovery sub-themes:            Sentiment:
+  other                     135    negative   272
+  search_and_navigation      81    positive   139
+  catalog_availability       49    mixed       40
+  playlist_curation          45
+  recommendation_quality     41
+  discovery_features         39
+  repetition_filter_bubble   35
+  algorithm_personalization  28
 ```
 
 **Charts (rendered live from the tagged data):**
 
-![Discovery reviews by sub-theme](chart_subtheme_frequency.png)
-![% negative sentiment by sub-theme](chart_pct_negative.png)
+![Discovery reviews by sub-theme](r2000_chart_subtheme_frequency.png)
+![% negative sentiment by sub-theme](r2000_chart_pct_negative.png)
 
 **Findings report (excerpt):**
 
 > The most significant frustrations stem from the **repetition filter bubble**
-> (100% negative) and **search and navigation** issues (77% negative). Discovery
+> (89% negative) and **search and navigation** issues (83% negative). Discovery
 > is blocked less by a weak algorithm than by friction and loss of control —
 > forced shuffle, ads, and song-selection locked behind Premium.
 
-➡️ Full report: [`discovery_insights_report.md`](discovery_insights_report.md)
+➡️ Full report: [`discovery_insights_report_2000.md`](discovery_insights_report_2000.md)
 
 ## 🧭 How to read this analysis (methodology & guidelines)
 
-- **Data:** 161 reviews that passed a music-discovery keyword filter, drawn from
-  Google Play (primary) and the Apple App Store RSS feed, within the last 12 months.
-- **Tagging:** each review was labeled by an LLM (Llama 3.3 70B via Groq) with a
-  `discovery_subtheme`, `sentiment`, and an extracted `pain_point`.
+- **Data:** **2,033** reviews that passed a music-discovery keyword filter, drawn
+  from **19,943** collected from Google Play (primary) and the Apple App Store RSS
+  feed, within the last 12 months.
+- **Tagging:** each review is labeled by an LLM (Llama 3.3 70B via Groq) with a
+  `discovery_subtheme`, `sentiment`, and an extracted `pain_point`. Tagging runs
+  ~150/day on the free tier — currently **453 of 2,033 tagged**, so the charts and
+  report below reflect the tagged subset and refresh as it completes.
 - **Synthesis:** a map-reduce pass summarized each sub-theme cluster, then
   combined those with exact Python-computed statistics into the findings below.
 - **Read with these caveats:** the dataset is **single-source-dominant** (Google
@@ -74,21 +77,21 @@ Discovery sub-themes:           Sentiment:
 
 ## 📌 Key findings — answers to the research questions
 
-*Grounded in the tagged dataset and the full [`discovery_insights_report.md`](discovery_insights_report.md). Sentiment is 59% negative overall.*
+*Grounded in the tagged dataset and the full [`discovery_insights_report_2000.md`](discovery_insights_report_2000.md). Of the 453 tagged so far, sentiment is 60% negative overall.*
 
 **1. Why do users struggle to discover new music?**
 Discovery is blocked less by a weak algorithm than by **friction and loss of
 control**. Free-tier constraints — forced "smart" shuffle, unskippable ads, and
 song-selection locked behind Premium — crowd out exploration, and a shuffle that
 replays the same tracks kills variety. The `repetition_filter_bubble` theme is
-**100% negative**, and **35%** of reviews mention free/ads/premium.
+**89% negative**, and **32%** of reviews mention free/ads/premium.
 
 **2. What are the most common frustrations with recommendations?**
 **Unwanted, over-eager suggestions** and weak personalization. Users feel pushed
 content they didn't ask for (*"I DO NOT WANT WHAT IS RECOMMENDED TO ME"*) and that
 the system over-generalizes from minimal signal (*"the Blend algorithm seems to
 think that if I listen to a song one time, I automatically love it"*).
-`algorithm_personalization` is 62% negative.
+`algorithm_personalization` is 68% negative.
 
 **3. What listening behaviors are users trying to achieve?**
 **Uninterrupted, controllable listening** — play a chosen song in a chosen order,
@@ -99,13 +102,13 @@ discovery (Discover Weekly is praised), but the baseline goal is control.
 **4. What causes users to repeatedly listen to the same content?**
 A **product mechanic, not user preference**: a shuffle that isn't truly random
 (*"the shuffle literally only plays the same 20 songs on repeat in the same
-order"*), and "smart shuffle" doesn't fix it. This theme is **100% negative**.
+order"*), and "smart shuffle" doesn't fix it. This theme is **89% negative**.
 
 **5. Which user segments experience different discovery challenges?**
-A clear split by **rating and tier**. Low-raters (1–2★, n=75) cluster on
-search/navigation and repetition friction; high-raters (4–5★, n=61) praise
+A clear split by **rating and tier**. Low-raters (1–2★, n=218) cluster on
+search/navigation and repetition friction; high-raters (4–5★, n=185) praise
 discovery features (*"Discover Weekly reads my mind"*). The **free-tier segment**
-(35% of reviews mention ads/free/premium) is the most frustrated, because key
+(32% of reviews mention ads/free/premium) is the most frustrated, because key
 playback controls are paywalled.
 
 **6. What unmet needs emerge consistently across reviews?**
