@@ -21,10 +21,11 @@ from openpyxl.utils import get_column_letter
 from openpyxl.workbook.properties import CalcProperties
 
 OUT = "Spotify_Reviews.xlsx"
+# Upgraded to the full 2,033-review dataset (19,943 raw collected).
 SOURCES = [
-    ("All Reviews", "spotify_reviews_raw.csv"),
-    ("Discovery Reviews", "spotify_discovery_reviews.csv"),
-    ("Tagged Reviews", "spotify_discovery_reviews_tagged.csv"),
+    ("All Reviews", "spotify_reviews_raw_large.csv"),
+    ("Discovery Reviews", "spotify_discovery_reviews_2000.csv"),
+    ("Tagged Reviews", "spotify_discovery_reviews_2000_tagged.csv"),
 ]
 
 HEADER_FILL = PatternFill("solid", start_color="1DB954")  # Spotify green

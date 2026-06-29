@@ -51,7 +51,7 @@ MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
 # Optionally pass a different tagged CSV as the first argument, e.g.
 #   python analyze_discovery_reviews.py spotify_discovery_reviews_v2_tagged.csv
 INPUT_CSV = sys.argv[1] if len(sys.argv) > 1 else "spotify_discovery_reviews_tagged.csv"
-_suffix = "_v2" if "_v2" in INPUT_CSV else ""
+_suffix = "_2000" if "2000" in INPUT_CSV else ("_v2" if "_v2" in INPUT_CSV else "")
 REPORT_MD = f"discovery_insights_report{_suffix}.md"
 STATS_CSV = f"discovery_stats{_suffix}.csv"
 CALL_DELAY = 2.0
@@ -168,9 +168,13 @@ MAP_SYSTEM = (
 )
 
 
+MAP_SAMPLE = 40  # max reviews per cluster summary (keeps calls within rate limits)
+
+
 def summarize_cluster(client, theme: str, sub: pd.DataFrame) -> str:
+    n_total = len(sub)
     samples = []
-    for _, r in sub.iterrows():
+    for _, r in sub.head(MAP_SAMPLE).iterrows():
         rating = r.get("rating")
         rtxt = f"{int(rating)}*" if pd.notna(rating) else "?*"
         samples.append(f"- ({rtxt}, {r['sentiment']}) {str(r['text'])[:240]}")
