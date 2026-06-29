@@ -4,6 +4,9 @@ An AI-powered pipeline that collects Spotify user reviews, filters them to
 music-discovery content, tags each review with a theme / sentiment / pain point
 using a free LLM, and synthesizes findings that answer key research questions.
 
+📖 **New here?** Read [How it works](HOW_IT_WORKS.md) (plain English) or the
+[Architecture](architecture.md) overview.
+
 ## ▶️ Try it in Google Colab — no API key needed
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Palash1417/Review-Discovery-Engine/blob/main/Spotify_Discovery_Pipeline_Colab.ipynb)
@@ -135,11 +138,21 @@ python chart_discovery_reviews.py        # charts
 ```
 
 ## Outputs
-- `spotify_discovery_reviews.csv` — filtered discovery reviews
-- `spotify_discovery_reviews_tagged.csv` — + AI tags
-- `discovery_insights_report.md` — findings report
-- `chart_*.png` — charts
+
+**Full dataset (2,033 discovery reviews from 19,943 collected):**
 - [`Spotify_Reviews.xlsx`](Spotify_Reviews.xlsx) — all reviews in one Excel workbook (all / discovery / tagged sheets + summary)
+- `spotify_discovery_reviews_2000.csv` — all 2,033 discovery reviews
+- `spotify_discovery_reviews_2000_tagged.csv` — 2,033 reviews + AI tags
+- `discovery_insights_report_2000.md` — findings report · `r2000_chart_*.png` — charts
+
+> ⏳ **Tagging in progress:** AI tagging runs ~150/day (free-tier limit) via
+> `tag_2000_daily.py`. The Excel and CSVs cover all 2,033 reviews; the tagged
+> columns, charts, and `_2000` report currently reflect the **subset tagged so
+> far** and refresh as tagging completes.
+
+**Original smaller run (161 reviews, fully tagged):**
+- `spotify_discovery_reviews.csv` · `spotify_discovery_reviews_tagged.csv`
+- `discovery_insights_report.md` · `chart_*.png`
 
 ## Security
 API keys live in `.env`, which is **gitignored** — never commit keys. The
