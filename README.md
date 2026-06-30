@@ -31,18 +31,18 @@ Total raw reviews collected live: 250
 ... discovery-relevant reviews kept
 ```
 
-**AI tagging (committed results — 453 of 2,033 tagged so far):**
+**AI tagging (committed results — 603 of 2,033 tagged so far):**
 
 ```text
 Discovery sub-themes:            Sentiment:
-  other                     135    negative   272
-  search_and_navigation      81    positive   139
-  catalog_availability       49    mixed       40
-  playlist_curation          45
-  recommendation_quality     41
-  discovery_features         39
-  repetition_filter_bubble   35
-  algorithm_personalization  28
+  other                     186    negative   361
+  search_and_navigation     107    positive   187
+  playlist_curation          60    mixed       50
+  catalog_availability       59
+  recommendation_quality     56
+  discovery_features         54
+  repetition_filter_bubble   49
+  algorithm_personalization  32
 ```
 
 **Charts (rendered live from the tagged data):**
@@ -53,7 +53,7 @@ Discovery sub-themes:            Sentiment:
 **Findings report (excerpt):**
 
 > The most significant frustrations stem from the **repetition filter bubble**
-> (89% negative) and **search and navigation** issues (83% negative). Discovery
+> (90% negative) and **search and navigation** issues (83% negative). Discovery
 > is blocked less by a weak algorithm than by friction and loss of control —
 > forced shuffle, ads, and song-selection locked behind Premium.
 
@@ -66,7 +66,7 @@ Discovery sub-themes:            Sentiment:
   feed, within the last 12 months.
 - **Tagging:** each review is labeled by an LLM (Llama 3.3 70B via Groq) with a
   `discovery_subtheme`, `sentiment`, and an extracted `pain_point`. Tagging runs
-  ~150/day on the free tier — currently **453 of 2,033 tagged**, so the charts and
+  ~150/day on the free tier — currently **603 of 2,033 tagged**, so the charts and
   report below reflect the tagged subset and refresh as it completes.
 - **Synthesis:** a map-reduce pass summarized each sub-theme cluster, then
   combined those with exact Python-computed statistics into the findings below.
@@ -77,21 +77,21 @@ Discovery sub-themes:            Sentiment:
 
 ## 📌 Key findings — answers to the research questions
 
-*Grounded in the tagged dataset and the full [`discovery_insights_report_2000.md`](discovery_insights_report_2000.md). Of the 453 tagged so far, sentiment is 60% negative overall.*
+*Grounded in the tagged dataset and the full [`discovery_insights_report_2000.md`](discovery_insights_report_2000.md). Of the 603 tagged so far, sentiment is 60% negative overall.*
 
 **1. Why do users struggle to discover new music?**
 Discovery is blocked less by a weak algorithm than by **friction and loss of
 control**. Free-tier constraints — forced "smart" shuffle, unskippable ads, and
 song-selection locked behind Premium — crowd out exploration, and a shuffle that
 replays the same tracks kills variety. The `repetition_filter_bubble` theme is
-**89% negative**, and **32%** of reviews mention free/ads/premium.
+**90% negative**, and **33%** of reviews mention free/ads/premium.
 
 **2. What are the most common frustrations with recommendations?**
 **Unwanted, over-eager suggestions** and weak personalization. Users feel pushed
 content they didn't ask for (*"I DO NOT WANT WHAT IS RECOMMENDED TO ME"*) and that
 the system over-generalizes from minimal signal (*"the Blend algorithm seems to
 think that if I listen to a song one time, I automatically love it"*).
-`algorithm_personalization` is 68% negative.
+`algorithm_personalization` is 62% negative.
 
 **3. What listening behaviors are users trying to achieve?**
 **Uninterrupted, controllable listening** — play a chosen song in a chosen order,
@@ -102,13 +102,13 @@ discovery (Discover Weekly is praised), but the baseline goal is control.
 **4. What causes users to repeatedly listen to the same content?**
 A **product mechanic, not user preference**: a shuffle that isn't truly random
 (*"the shuffle literally only plays the same 20 songs on repeat in the same
-order"*), and "smart shuffle" doesn't fix it. This theme is **89% negative**.
+order"*), and "smart shuffle" doesn't fix it. This theme is **90% negative**.
 
 **5. Which user segments experience different discovery challenges?**
-A clear split by **rating and tier**. Low-raters (1–2★, n=218) cluster on
-search/navigation and repetition friction; high-raters (4–5★, n=185) praise
+A clear split by **rating and tier**. Low-raters (1–2★, n=290) cluster on
+search/navigation and repetition friction; high-raters (4–5★, n=248) praise
 discovery features (*"Discover Weekly reads my mind"*). The **free-tier segment**
-(32% of reviews mention ads/free/premium) is the most frustrated, because key
+(33% of reviews mention ads/free/premium) is the most frustrated, because key
 playback controls are paywalled.
 
 **6. What unmet needs emerge consistently across reviews?**

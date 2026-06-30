@@ -1,315 +1,280 @@
 # Spotify Music Discovery — Findings
 
 ## Executive Summary
-This study analyzed 453 user reviews of Spotify's music discovery features, revealing a mix of positive and negative sentiments. The majority of users (60%) expressed frustration with various aspects of the app, while 31% were satisfied. The top sub-themes contributing to negative sentiments were search and navigation, repetition filter bubble, and algorithm personalization. Users' goals and unmet needs highlight a desire for seamless music listening experiences, ad-free listening, and more control over playlist selection and playback.
+
+Our study analyzed 603 user reviews of Spotify music discovery, revealing a complex landscape of user experiences, frustrations, and unmet needs. The majority of users (60%) expressed negative sentiments, citing issues with search and navigation, repetition, and algorithm personalization. Despite these challenges, users seek a seamless music listening experience, personalized recommendations, and control over their playlists. Our findings highlight the need for Spotify to address these concerns and provide a more user-centric music discovery experience.
 
 ## 1. Why do users struggle to discover new music?
-Users struggle to discover new music due to various issues with the app's algorithm and features. The repetition filter bubble sub-theme (35 reviews) highlights the frustration with repetitive song playback, even with shuffle activated. Users also express dissatisfaction with the limited skips per hour in free mode and the forced ads and premium requirements (Cluster: repetition_filter_bubble). Additionally, the algorithm personalization sub-theme (28 reviews) reveals issues with the algorithm not adapting to changing music tastes and poor handling of playlists and recommendations.
 
-**Quote:** "It's an Advertisement app with over control of users, we listen to the same songs repeatedly, unwanted songs in between and don't listen to our play list songs at all. Waste of time, using this" (1*, negative)
+Users struggle to discover new music due to various issues, including poor search and navigation (83% negative, n=107), algorithm personalization problems (62% negative, n=32), and limitations in playlist curation (42% negative, n=60). As one user noted, "Spotify would be a five-star app if the options and decisions for free users were expanded" (search_and_navigation cluster). These challenges hinder users' ability to explore new music and create playlists that suit their mood and preferences.
 
 ## 2. What are the most common frustrations with recommendations?
-The most common frustrations with recommendations are related to the repetition filter bubble sub-theme (35 reviews), where users experience repetitive song playback, even with shuffle activated. Additionally, users express dissatisfaction with the limited skips per hour in free mode and the forced ads and premium requirements. The recommendation quality sub-theme (41 reviews) also highlights issues with the constant recommendation of songs users don't want to listen to and the large number of ads.
 
-**Quote:** "I DO NOT WANT WHAT IS RECOMMENDED TO ME. I would like to listen to the artist I chose not other artists that I don't listen too at all, PLEASE..." (3*, negative)
+The most common frustrations with recommendations are intrusive and poorly tailored suggestions (38% negative, n=56), overemphasis on sponsored content (62% negative, n=32), and algorithmic failures to adapt to changing music tastes (algorithm_personalization cluster). Users express frustration with recommendations that disrupt their listening experience, such as the quote, "Please STOP recommending other artists' songs to me, I ONLY listen to BTS Thank you" (recommendation_quality cluster).
 
 ## 3. What listening behaviors are users trying to achieve?
-Users aim to achieve seamless music listening experiences, ad-free listening, and more control over playlist selection and playback. The goals of users in the other sub-theme (135 reviews) include having a seamless music listening experience, ability to skip and play songs without restrictions, and ad-free listening. Users in the discovery features sub-theme (39 reviews) also aim to discover new music and artists, create personalized playlists, and enjoy high-quality sound.
 
-**Quote:** "Discover Weekly reads my mind."
+Users aim to achieve a seamless music listening experience, personalized recommendations, and control over their playlists. They seek to discover new music, enjoy their favorite songs and podcasts, and explore more music and artists (discovery_features cluster). As one user stated, "I love how I get to do my own music playlist!!" (playlist_curation cluster). These goals are often hindered by the limitations and frustrations mentioned earlier.
 
 ## 4. What causes users to repeatedly listen to the same content?
-Users repeatedly listen to the same content due to various issues with the app's algorithm and features. The repetition filter bubble sub-theme (35 reviews) highlights the frustration with repetitive song playback, even with shuffle activated. Users also express dissatisfaction with the limited skips per hour in free mode and the forced ads and premium requirements.
 
-**Quote:** "Paying 12.99 a month just to hear the same Playlist no matter how many times I shuffle it. Sometimes the app glitches on me. If it still continues, I have to give up Spotify and use something else" (1*, negative)
+Users repeatedly listen to the same content due to issues with repetition, such as the "smart shuffle" feature, which adds random songs not in their playlist (30% negative, n=54). This repetition is also caused by poor playlist management and song rotation (repetition_filter_bubble cluster). As one user noted, "it plays the same rotation EVERY. SINGLE. TIME. Shuffle is abysmal at best" (repetition_filter_bubble cluster).
 
 ## 5. Which user segments experience different discovery challenges?
-The user segments that experience different discovery challenges are those in the free-tier segment, as indicated by reviews mentioning free/ads/premium (146 reviews, 32%). These users express frustration with the limited skips per hour, forced ads, and premium requirements. Additionally, users in the other sub-theme (135 reviews) experience challenges related to the app's performance, such as crashing and freezing issues, and the inability to manually rearrange playlist order.
 
-**Quote:** "it's Horrible. Ads everywhere, And now you have to pay to listen too songs on repeat, unless you have a huge budget income."
+Different user segments experience varying discovery challenges. For example, users in the free-tier segment (33% of reviews) express frustration with ads, limited skips, and playback restrictions (other cluster). In contrast, users with premium subscriptions (67% of reviews) are more likely to experience issues with algorithm personalization and poor app performance (algorithm_personalization cluster). These differences highlight the need for Spotify to address the unique challenges faced by each user segment.
 
 ## 6. What unmet needs emerge consistently across reviews?
-The unmet needs that emerge consistently across reviews include more control over playlist selection and playback, better ad management and fewer interruptions, improved app performance and stability, and more features for free users without premium subscription. Users also express a desire for more personalized music recommendations, a more effective and random shuffle algorithm, and increased skips per hour in free mode.
 
-**Quote:** "Spotify would be a five-star app if the options and decisions for free users were expanded. We can't even pick what we want to listen to from our playlists and we only have a couple skips an hour."
+Consistent unmet needs across reviews include:
+
+* More features and flexibility for non-premium users (other cluster)
+* Improved app stability and performance (search_and_navigation cluster)
+* Reduced ad frequency and repetition (other cluster)
+* Enhanced offline listening capabilities (other cluster)
+* More control over recommendations and playlists (recommendation_quality cluster)
+* Better playlist management and song rotation (repetition_filter_bubble cluster)
+
+These unmet needs highlight the need for Spotify to provide a more user-centric music discovery experience, addressing the concerns and frustrations of its users.
 
 ## Limitations
-This study is limited by its single-source dataset from Google Play, which may not be representative of the entire Spotify user base. Additionally, the study is recent, and the results may not reflect changes to the app's features and algorithms over time. The dataset is also limited to English-language reviews, which may not capture the experiences of non-English-speaking users.
+
+This study is limited by its single-source dataset (Google Play reviews), recent data collection (no specific date mentioned), and English-language focus. The findings may not generalize to other user segments, such as those using the Spotify app on other platforms or in other languages. Future studies should aim to collect data from multiple sources and languages to provide a more comprehensive understanding of user experiences with Spotify music discovery.
 
 ---
 
 ## Appendix A — Exact Statistics
 
 ```
-Total discovery reviews analyzed: 453
+Total discovery reviews analyzed: 603
 
 Sub-theme counts:
-  other: 135 (30%)
-  search_and_navigation: 81 (18%)
-  catalog_availability: 49 (11%)
-  playlist_curation: 45 (10%)
-  recommendation_quality: 41 (9%)
-  discovery_features: 39 (9%)
-  repetition_filter_bubble: 35 (8%)
-  algorithm_personalization: 28 (6%)
+  other: 186 (31%)
+  search_and_navigation: 107 (18%)
+  playlist_curation: 60 (10%)
+  catalog_availability: 59 (10%)
+  recommendation_quality: 56 (9%)
+  discovery_features: 54 (9%)
+  repetition_filter_bubble: 49 (8%)
+  algorithm_personalization: 32 (5%)
 
 Sentiment overall:
-  negative: 272 (60%)
-  positive: 139 (31%)
-  mixed: 40 (9%)
-  neutral: 2 (0%)
+  negative: 361 (60%)
+  positive: 187 (31%)
+  mixed: 50 (8%)
+  neutral: 5 (1%)
 
 % negative by sub-theme (which themes hurt most):
-  repetition_filter_bubble: 89% negative (n=35)
-  search_and_navigation: 83% negative (n=81)
-  algorithm_personalization: 68% negative (n=28)
-  other: 63% negative (n=135)
-  catalog_availability: 53% negative (n=49)
-  playlist_curation: 44% negative (n=45)
-  recommendation_quality: 39% negative (n=41)
-  discovery_features: 21% negative (n=39)
+  repetition_filter_bubble: 90% negative (n=49)
+  search_and_navigation: 83% negative (n=107)
+  algorithm_personalization: 62% negative (n=32)
+  other: 62% negative (n=186)
+  catalog_availability: 53% negative (n=59)
+  playlist_curation: 42% negative (n=60)
+  recommendation_quality: 38% negative (n=56)
+  discovery_features: 30% negative (n=54)
 
-Rating segments: low (1-2 stars) = 218, mid (3) = 50, high (4-5 stars) = 185
+Rating segments: low (1-2 stars) = 290, mid (3) = 65, high (4-5 stars) = 248
   Top sub-themes among LOW-rating (frustrated) users:
-    other: 75
-    search_and_navigation: 51
-    repetition_filter_bubble: 25
-    catalog_availability: 22
+    other: 102
+    search_and_navigation: 67
+    repetition_filter_bubble: 37
+    catalog_availability: 25
   Top sub-themes among HIGH-rating (satisfied) users:
-    other: 45
-    discovery_features: 31
-    playlist_curation: 28
-    recommendation_quality: 26
+    other: 64
+    playlist_curation: 38
+    discovery_features: 38
+    recommendation_quality: 37
 
-Reviews mentioning free/ads/premium: 146 (32%) — a proxy for the free-tier segment.
+Reviews mentioning free/ads/premium: 201 (33%) — a proxy for the free-tier segment.
 ```
 
 ## Appendix B — Per-Cluster Evidence
 
-### Cluster: other (n=135)
+### Cluster: other (n=186)
 **FRUSTRATIONS:**
 
 - Crashing and freezing issues
 - Annoying ads and ad repetition
 - Limited skips and playback restrictions for free users
-- Premium features not working as expected
-- Slow app performance and loading times
-- Offline mode not working as expected
+- Offline listening issues
+- Premium pricing and limited features for non-premium users
 
 **GOALS:**
 
 - Seamless music listening experience
-- Ability to skip and play songs without restrictions
+- Ability to create and manage playlists
 - Ad-free listening
-- Easy playlist management and customization
-- Offline access to music
+- Offline listening capabilities
+- Unlimited skips and playback control
 
 **UNMET NEEDS:**
 
-- More control over playlist selection and playback
-- Better ad management and fewer interruptions
-- Improved app performance and stability
-- More features for free users without premium subscription
+- More features and flexibility for non-premium users
+- Improved app stability and performance
+- Reduced ad frequency and repetition
+- Enhanced offline listening capabilities
 
 **QUOTES:**
 
 - "it's Horrible. Ads everywhere, And now you have to pay to listen too songs on repeat, unless you have a huge budget income."
-- "I don't want a social media app, your job is just to play music. That's it. Which is why I'm leaving this nonsense once this month ends."
+- "I will never take premium. I used to love this app but now it's just a money grab with too many ads and restrictions."
 
-### Cluster: search_and_navigation (n=81)
+### Cluster: search_and_navigation (n=107)
 **FRUSTRATIONS:**
 
-- Frequent app crashes and freezes
-- Inconsistent and poor user interface
-- Lack of personalized search features
-- Buggy app with unresponsive features
-- Too many ads in the free version
-- Limited skips and inability to choose music in playlists
+- Frequent app crashes, freezes, and lag.
+- Inconsistent and poor user interface.
+- Lack of personalized search features.
+- Inability to skip songs, choose playlists, and select music.
+- Excessive ads and limited skips for free users.
+- Bugs and glitches in playlist management and playback.
 
 **GOALS:**
 
-- Easily find and play music from playlists
-- Customize playlists and music selection
-- Have a seamless and responsive user experience
-- Access personalized search features
-- Enjoy ad-free listening with more skips
+- Easy music discovery and exploration.
+- Ability to skip songs and choose playlists.
+- Personalized search features and recommendations.
+- Seamless playlist management and playback.
+- Ad-free listening experience for free users.
 
 **UNMET NEEDS:**
 
-- A 'Back to Top' button in the interface
-- A 'Local Files' button for adding songs to playlists
-- A way to delete already listened to playlists and artists
-- A random play option from any song in the artist's library
-- A consistent and reliable widget experience
+- A 'Back to Top' button in the interface.
+- Local Files button for adding songs to playlists.
+- Ability to exclude certain songs from playlists.
+- Option to choose what to listen to from playlists.
+- Better playlist sorting and organization features.
 
 **QUOTES:**
 
 - "I don't know why but recently I have to keep uninstalling and then reinstall the app cuz I couldn't look at the Spotify it wouldn't show me my playlist it was like a black screen I don't know what's going on with your app and my phone is fine."
 - "Spotify would be a five star app if the options and decisions for free users were expanded. We can't even pick what we want to listen to from our playlists and we only have a couple skips an hour."
 
-### Cluster: catalog_availability (n=49)
+### Cluster: playlist_curation (n=60)
 **FRUSTRATIONS:**
 
-- Limited music playback without premium subscription
-- Frequent ads interrupting music listening
-- Music removal from playlists or library
-- Difficulty discovering new music due to AI-generated content
-- Technical issues with playback, such as songs not playing or playlists being empty
+* Users are frustrated with the inability to manually rearrange playlist order.
+* They dislike the addition of unwanted songs and artists to their playlists.
+* Some users are annoyed by the random addition of songs to their playlists.
+* Others are frustrated with the limitations of the free version, including ads and limited playlist customization.
 
 **GOALS:**
 
-- Unlimited music playback without premium subscription
+* Users want to create and customize playlists that suit their mood and preferences.
+* They want to listen to their playlists in a specific order, without shuffling.
+* Users aim to discover new music and enjoy a seamless listening experience.
+
+**UNMET NEEDS:**
+
+* Users wish for a higher song limit in playlists (up to 100,000).
+* They want better playlist curation and easier genre filtering.
+* Some users desire a more user-friendly playlist creation and editing experience.
+
+**QUOTES:**
+
+* "man let us listen to our playlist in peace stop adding songs" (2*, negative)
+* "I love how I get to do my own music playlist!!" (5*, positive)
+
+### Cluster: recommendation_quality (n=56)
+**FRUSTRATIONS:**
+
+- Users are annoyed by intrusive recommendations while listening to specific artists or albums.
+- Some users experience poor app performance, such as loading issues and crashes.
+- Users are frustrated with ads and the limitations of the free version.
+
+**GOALS:**
+
+- Users want to enjoy their favorite music without interruptions.
+- Users aim to discover new music and artists through recommendations.
+- Users seek a seamless and enjoyable listening experience.
+
+**UNMET NEEDS:**
+
+- Users wish for more control over recommendations, such as the ability to remove specific artists or albums.
+- Users desire a more personalized experience, with recommendations tailored to their specific tastes.
+- Users want a more premium-like experience without the cost.
+
+**QUOTES:**
+
+- "Please STOP recommending other artists' songs to me, I ONLY listen to BTS Thank you" (4*, negative)
+- "I love Spotify's recommendations and Smart Shuffle. Sometimes Spotify introduces me to songs that fit my current vibe perfectly, but I don't necessarily want to add them to my Liked Songs." (5*, positive)
+
+### Cluster: discovery_features (n=54)
+**FRUSTRATIONS:**
+
+- Users are frustrated with the "smart shuffle" feature, which adds random songs not in their playlist.
+- Some users experience issues with offline listening, song radios, and playlist loading.
+- Others are annoyed by ads, limited song queuing, and forced premium features.
+
+**GOALS:**
+
+- Users want to discover new music and create playlists for every mood.
+- They aim to enjoy their favorite songs and podcasts with excellent sound quality.
+- Some users seek to explore more music and discover amazing artists.
+
+**UNMET NEEDS:**
+
+- Users wish for an option to remove "smart shuffle" and turn off AI-driven playlists.
+- They want more control over their playlists, such as the ability to queue songs and loop playlists.
+- Some users desire better ad management and more features without premium.
+
+**QUOTES:**
+
+- "I love the app, generally speaking. however, the absolute BS that is shuffle is ruining the app. You play a song that's been stuck in your head, but you don't like what it shuffled? too bad. you're stuck with it."
+- "I have premium for years. Until April 2026 there were no issues. Most recent updates are just making the app worse. 1. Songs on smart shuffle just got worse. repeatedly playing the same music that has already been disapproved."
+
+### Cluster: repetition_filter_bubble (n=49)
+**Sub-theme: repetition_filter_bubble (49 reviews)**
+
+**FRUSTRATIONS:**
+- Repetitive song playback, even with shuffle enabled
+- Limited skips or inability to skip songs
+- Forced ads and premium features
+- Poor playlist management and song rotation
+
+**GOALS:**
+- Listen to their curated playlists without repetition
+- Enjoy a seamless and random music experience
+- Access features without premium subscription
+- Discover new music without being forced to
+
+**UNMET NEEDS:**
+- A more robust and random shuffle algorithm
+- Increased skips or ability to skip songs
 - Ad-free listening experience
-- Ability to discover new music without AI-generated content
-- Easy access to favorite songs and playlists
-- Smooth and uninterrupted playback
-
-**UNMET NEEDS:**
-
-- Clear labeling of AI-generated music
-- Ability to filter out AI-generated music
-- More control over playlist organization and song selection
-- Better handling of large music collections
-- More transparency in music removal and artist contracts
+- Better playlist management and song rotation
 
 **QUOTES:**
+- "it plays the same rotation EVERY. SINGLE. TIME. Shuffle is abysmal at best."
+- "it's giving the same playlist everytime and more ads day by day"
 
-- "USELESS APP!! switching up to jiosaavn, there are so many problems! like after a couple of songs we cannot play our favourite song cuz we don't have 'premium membership' like what is this app supposed to do,huh if it stops us from playing our favourite songs, it's useless." (1*, negative)
-- "it's like the bestest ever app of all time I would have given 5 as a rating but the problem is the ads they pop up after every 3 to 4 songs." (4*, positive)
-
-### Cluster: playlist_curation (n=45)
-**FRUSTRATIONS:**
-
-- Users are frustrated with the inability to manually rearrange playlist order.
-- They dislike the random addition of songs to playlists.
-- Some users are annoyed by ads and the need for premium to access certain features.
-- Others are upset by the shuffling of playlists when premium ends.
-
-**GOALS:**
-
-- Users want to create and manage their own playlists with control over song order.
-- They aim to listen to music without interruptions from ads or shuffling.
-- Some users seek to access premium features without cost.
-
-**UNMET NEEDS:**
-
-- Users wish for a higher song limit in playlists (up to 100,000).
-- They desire better playlist curation and organization.
-- Some users want to be able to reorder songs in liked songs playlists.
-
-**QUOTES:**
-
-- "Why can't I manually rearrange the order of my playlist anymore? I use that feature to plant! set lists to figure out the order I want." (2*, negative)
-- "Lots of variety especially on their Playlists. and there is something for everyone!" (5*, positive)
-
-### Cluster: recommendation_quality (n=41)
-**FRUSTRATIONS:**
-
-- Users are annoyed by the constant recommendation of songs they don't want to listen to.
-- The app's performance is glitchy, causing issues with searching, adding songs to playlists, and accessing artists.
-- Users are frustrated with the large number of ads and the push for premium features.
-- Some users experience issues with the app's ability to load and recommend songs.
-
-**GOALS:**
-
-- Users want to listen to their own playlists without interruptions from recommended songs.
-- They want to easily discover new songs and create playlists.
-- Users aim to have a seamless listening experience with minimal ads and no glitches.
-
-**UNMET NEEDS:**
-
-- Users wish they could remove podcasts from their library and recommendations more easily.
-- They want to be able to set their music preferences and avoid recommended songs that don't fit their taste.
-- Users desire a more affordable premium option and better artist payment issues.
-
-**QUOTES:**
-
-- "I DO NOT WANT WHAT IS RECOMMENDED TO ME. I would like to listen to the artist I chose not other artists that I don't listen too at all, PLEASE..." (3*, negative)
-- "The recommendation system is fire 🔥🔥" (5*, positive)
-
-### Cluster: discovery_features (n=39)
-**FRUSTRATIONS:**
-
-- Random song additions without user interaction
-- Inconsistent or annoying shuffle features
-- Forced promotional content or ads
-- Limited control over playlist playback for free users
-
-**GOALS:**
-
-- Discover new music and artists
-- Create personalized playlists
-- Enjoy high-quality sound
-- Easily navigate and use the app
-
-**UNMET NEEDS:**
-
-- More control over shuffle features
-- Option to remove or disable smart shuffle
-- Ability to select specific songs to play first in a playlist
-- More proactive Discover Weekly suggestions
-
-**QUOTES:**
-
-- "Discover Weekly reads my mind."
-- "Discovering new artists through Discover Weekly feels like magic."
-
-### Cluster: repetition_filter_bubble (n=35)
-**Sub-theme: repetition_filter_bubble (35 reviews)**
-
-**FRUSTRATIONS:**
-
-- Repetitive song playback in playlists, even with shuffle activated
-- Limited skips per hour in free mode
-- Forced ads and premium requirements
-- Poor music discovery and recommendation algorithms
-- App crashes and glitches
-
-**GOALS:**
-
-- To discover new music and artists
-- To have control over their listening experience
-- To enjoy a seamless and uninterrupted listening experience
-- To avoid repetitive song playback
-
-**UNMET NEEDS:**
-
-- A more effective and random shuffle algorithm
-- Increased skips per hour in free mode
-- More personalized music recommendations
-- A more user-friendly and glitch-free app
-
-**QUOTES:**
-
-- "It's an Advertisement app with over control of users, we listen to the same songs repeatedly, unwanted songs in between and don't listen to our play list songs at all. Waste of time, using this" (1*, negative)
-- "Paying 12.99 a month just to hear the same Playlist no matter how many times I shuffle it. Sometimes the app glitches on me. If it still continues, I have to give up Spotify and use something else" (1*, negative)
-
-### Cluster: algorithm_personalization (n=28)
+### Cluster: algorithm_personalization (n=32)
 **FRUSTRATIONS:**
 
 - Algorithm not adapting to changing music tastes
-- Frequent bugs and issues with the app
-- Poor handling of playlists and recommendations
-- Inability to switch off sponsored content
-- Inadequate handling of ads and ad-free listening
-- Issues with shuffling and queueing
+- Overemphasis on sponsored recommendations and ads
+- Bugs and glitches in the app
+- Poor performance of the shuffle and blend features
+- Lack of control over music discovery
 
 **GOALS:**
 
 - Discover new music that matches their taste
-- Enjoy uninterrupted listening experience
-- Access to high-quality streaming and vast library
-- Ability to create and manage playlists effectively
+- Enjoy ad-free listening
+- Have a seamless and smooth music streaming experience
+- Be able to easily navigate and use the app
+- Find personalized recommendations
 
 **UNMET NEEDS:**
 
+- Customizable themes
 - Ability to set safe playlists for kids
-- Option to exclude reissues from new music recommendations
-- More control over algorithm and recommendations
-- Better handling of compilation albums and mixed tracks
-- Ability to switch off audio books and podcasts
+- More control over music discovery
+- Better handling of playlist updates
+- Improved performance and fewer bugs
 
 **QUOTES:**
 
-- "The algorithm only seems to go by what you tend to listen to instead of musical theory of any sort."
-- "Spotify isn't a book store or a video hub, stop gouging your loyal customers to add unnecessary features we're not interested in"
+- "The algorithm is downright spooky with how well it nails my taste." (5*, positive)
+- "This app is horrible. I am a radio enthusiast and I want to listen to my 30s music in peace but AFTER EVERY SONG an ad plays and ruins it." (1*, negative)
